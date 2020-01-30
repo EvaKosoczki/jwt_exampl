@@ -1,0 +1,11 @@
+<div class="login">
+  <h1 class="login__title">Login</h1>
+  <form (submit)="onSubmit($event)">
+    <input type="text" placeholder="Email" id="email" class="login__input" name="email" [(ngModel)]="data.email">
+    <input type="password" placeholder="password" id="password" class="login__input" name="password"
+      [(ngModel)]="data.password">
+    <a href="#" class="login__forgot">forgot password?</a>
+    <button type="submit" class="login__button">Sign In</button>
+    <button class="login__button" routerLink="/">Home</button>
+  </form>
+</div>

@@ -1,0 +1,13 @@
+<div class="register">
+  <h1 class="register__title">Registration</h1>
+  <form (submit)="onSubmit($event)">
+    <input type="name" placeholder="Name" name="name" class="register__input" [(ngModel)]="data.name">
+    <input type="email" placeholder="Email" name="email" class="register__input" [(ngModel)]="data.email">
+    <input type="text" placeholder="Username" name="username" class="register__input" [(ngModel)]="data.username">
+    <input type="password" placeholder="Password" name="password" class="register__input" [(ngModel)]="data.password">
+    <input type="role" placeholder="role" name="role" class="register__input" [(ngModel)]="data.role">
+
+    <button type="submit" class="register__button" value="Register">Register</button>
+    <button class="register__button" value="Register" routerLink="/">Home</button>
+  </form>
+</div>

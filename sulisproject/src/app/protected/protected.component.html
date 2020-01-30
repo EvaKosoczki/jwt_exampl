@@ -1,0 +1,17 @@
+<div *ngIf="isLoggedIn, else loggedOut">
+
+  <h2 style="text-align:center">User Profile Card</h2>
+  <div class="card">
+    <img src="assets/3.jpg" alt="img" class="image">
+    <h4>Name: {{data.name}}</h4>
+    <h4>Username: {{data.username}}</h4>
+    <h4>email: {{data.email}}</h4>
+    <p><button class="profile_button" routerLink="/">Home</button></p>
+
+  </div>
+</div>
+<ng-template #loggedOut>
+  <h4>{{err.status}}</h4>
+  <h4>{{err.statusText}}</h4>
+  <button class="btn btn-success" routerLink="/">Home</button>
+</ng-template>
